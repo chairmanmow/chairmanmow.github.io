@@ -1,47 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Harmonic Hands</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="header-toolbar">
+        <div class="logo-container">
+            <img src="hare.png" alt="Logo Harmonic Hands" class="logo">
+            <span class="logo-text">Suporte Harmonic Hands</span>
+        </div>
+    </header>
 
-  <h1>Suporte para Harmonic Hands</h1>
-  <h2>Operação básica por página (Aba horizontal)</h2>
-  <ol>
-    <li><b>Iniciar e parar a reprodução</b>
-      <p>Toque no coelho para iniciar a reprodução e na onda para parar. Use a coroa para ajustar o volume.</p>
-    </li>
-    <li><b>Ajustar os parâmetros do sintetizador</b>
-      <p>Controle os parâmetros de dois osciladores separados para combiná-los e gerar um som único.</p>
-    </li>
-    <li><b>Configurações de afinação</b>
-      <p>Ative ou desative o autotune e/ou ajuste a faixa de frequência para controlar os tons que o sintetizador irá gerar.</p>
-    </li>
-    <li><b>Parâmetros de movimento</b>
-      <p>Ajuste os parâmetros relacionados ao movimento para se adequar ao seu estilo de jogo.</p>
-    </li>
-  </ol>
-  
-  <h2>Dicas e truques</h2>
-  <ol>
-    <li><b>Evitar que o aplicativo entre em repouso ao girar o pulso:</b>
-        <p><i>Ajuste a configuração "Retornar ao relógio" no WatchOS:</i></p>
-        <p>Altere a configuração "Retornar ao relógio" para "2 minutos" ou "1 hora", caso contrário o aplicativo entrará em repouso quando seu pulso atingir uma determinada posição.</p>
-    </li>
-    <li><b>Reduza o volume antes de iniciar o aplicativo</b>
-        <p>Evite volumes indesejados e proteja sua audição girando a coroa para baixo na primeira tela para começar com um volume baixo.</p>
-    </li>  
-  </ol>
+    <!-- Main Content -->
+    <main class="content">
+        <h1>Suporte Harmonic Hands</h1>
 
-  <h2>Problemas conhecidos</h2>
-  <ol>
-    <li><b>O som pode ser interrompido</b>
-        <p>Isso não deve acontecer com frequência, mas caso ocorra, o aplicativo reiniciará automaticamente o motor de som. Estamos investigando este problema para melhorá-lo.</p>
-    </li>
-    <li><b>Otimização da vida útil da bateria</b>
-        <p>Como este aplicativo utiliza alguns recursos enquanto está ativo, a bateria descarregará mais rapidamente do que no estado de repouso. Estamos avaliando a possibilidade de adicionar um modo otimizado para bateria, permitindo desativar certos recursos.</p>
-    </li>  
-  </ol>
+        <h2>Operação Básica por Página (Aba Horizontal)</h2>
+        <ol>
+            <li>
+                <b>Iniciar e parar a reprodução</b>
+                <p>Toque no coelho para iniciar a reprodução e na onda para parar. Use a coroa para ajustar o volume.</p>
+            </li>
+            <li>
+                <b>Ajustando os parâmetros do sintetizador</b>
+                <p>Controle os parâmetros de dois osciladores separados para combiná-los e gerar um som único.</p>
+            </li>
+            <li>
+                <b>Configurações de afinação</b>
+                <p>Ative ou desative o autotune e/ou ajuste o intervalo de frequências para controlar quais tons o sintetizador irá gerar.</p>
+            </li>
+            <li>
+                <b>Parâmetros de movimento</b>
+                <p>Ajuste os parâmetros relacionados ao movimento para se adaptar ao seu estilo de jogo.</p>
+            </li>
+        </ol>
 
+        <h2>Dicas e Truques</h2>
+        <ol>
+            <li>
+                <b>Impedir que o aplicativo entre em suspensão ao girar o pulso:</b>
+                <p><i>Ajuste a configuração "Retornar ao Relógio" do WatchOS:</i></p>
+                <p>Altere a configuração "Retornar ao Relógio" para "2 minutos" ou "1 hora"; caso contrário, o aplicativo entrará em suspensão quando o pulso atingir uma certa orientação.</p>
+            </li>
+            <li>
+                <b>Defina o volume baixo antes de iniciar o aplicativo</b>
+                <p>Evite volumes indesejados e proteja sua audição girando a coroa para baixo na primeira visualização, para começar com um volume baixo.</p>
+            </li>
+        </ol>
+
+        <h2>Problemas Conhecidos</h2>
+        <ol>
+            <li>
+                <b>O som pode ser interrompido</b>
+                <p>Em casos muito raros, o aplicativo pode parar de emitir som, mas deve tentar retomar automaticamente. Se o problema persistir:
+                <ol>
+                    <li>Feche o aplicativo pressionando a coroa duas vezes e deslizando para fechá-lo.</li>
+                    <li>Reinicie o aplicativo.</li>
+                    <li>O som deve voltar ao normal.</li>
+                </ol>
+                </p>
+            </li>
+            <li>
+                <b>Otimização da duração da bateria</b>
+                <p>Como o aplicativo utiliza alguns recursos quando está ativo, a bateria descarrega mais rápido do que quando o relógio está em estado ocioso. Estamos analisando se faz sentido adicionar um modo de otimização da bateria, permitindo desativar certos recursos. Sair do osciloscópio também reduzirá o uso de recursos.</p>
+            </li>
+        </ol>
+    </main>
 </body>
 </html>

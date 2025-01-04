@@ -1,47 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Harmonic Hands</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="header-toolbar">
+        <div class="logo-container">
+            <img src="hare.png" alt="Logo Harmonic Hands" class="logo">
+            <span class="logo-text">Support Harmonic Hands</span>
+        </div>
+    </header>
 
-  <h1>Support de Harmonic Hands</h1>
-  <h2>Fonctionnement de base par page (Onglet horizontal)</h2>
-  <ol>
-    <li><b>Démarrer et arrêter la lecture</b>
-      <p>Appuyez sur le lapin pour démarrer la lecture et sur l'onde pour l'arrêter. Utilisez la couronne pour ajuster le volume.</p>
-    </li>
-    <li><b>Ajuster les paramètres du synthétiseur</b>
-      <p>Contrôlez les paramètres de deux oscillateurs indépendants pour les mélanger et générer un son unique.</p>
-    </li>
-    <li><b>Paramètres d'accordage</b>
-      <p>Activez ou désactivez l'autotune et/ou ajustez la plage de fréquences pour contrôler les notes générées par le synthétiseur.</p>
-    </li>
-    <li><b>Paramètres de mouvement</b>
-      <p>Ajustez les paramètres liés au mouvement pour les adapter à votre style de jeu.</p>
-    </li>
-  </ol>
-  
-  <h2>Conseils et astuces</h2>
-  <ol>
-    <li><b>Empêcher l'application de se mettre en veille lors de la rotation du poignet :</b>
-        <p><i>Ajustez le paramètre WatchOS "Retour à l'horloge" :</i></p>
-        <p>Modifiez le paramètre "Retour à l'horloge" sur "2 minutes" ou "1 heure", sinon l'application se mettra en veille lorsque votre poignet atteindra une certaine orientation.</p>
-    </li>
-    <li><b>Baissez le volume avant de lancer l'application</b>
-        <p>Pour éviter un volume non désiré et protéger l'audition, tournez la couronne vers le bas sur la première vue afin de commencer avec un volume faible.</p>
-    </li>  
-  </ol>
+    <!-- Main Content -->
+    <main class="content">
+        <h1>Support Harmonic Hands</h1>
 
-  <h2>Problèmes connus</h2>
-  <ol>
-    <li><b>Le son peut se couper</b>
-        <p>Cela ne devrait pas se produire fréquemment, mais si cela arrive, l'application redémarrera automatiquement le moteur audio. Nous enquêtons sur ce problème pour l'améliorer.</p>
-    </li>
-    <li><b>Optimisation de la durée de vie de la batterie</b>
-        <p>Comme cette application utilise des ressources lorsqu'elle est active, la batterie se décharge plus rapidement qu'en mode veille. Nous examinons la possibilité d'ajouter un mode optimisé pour la batterie, permettant de désactiver certaines fonctionnalités.</p>
-    </li>  
-  </ol>
+        <h2>Fonctionnement de Base par Page (Onglet Horizontal)</h2>
+        <ol>
+            <li>
+                <b>Démarrer et arrêter la lecture</b>
+                <p>Appuyez sur le lapin pour démarrer la lecture et sur l'onde pour arrêter. Utilisez la couronne pour ajuster le volume.</p>
+            </li>
+            <li>
+                <b>Ajustement des paramètres du synthétiseur</b>
+                <p>Contrôlez les paramètres de deux oscillateurs distincts pour les mélanger et générer un son unique.</p>
+            </li>
+            <li>
+                <b>Réglages de l'accordage</b>
+                <p>Activez ou désactivez l'autotune et/ou ajustez la plage de fréquences pour contrôler les tonalités générées par le synthétiseur.</p>
+            </li>
+            <li>
+                <b>Paramètres de mouvement</b>
+                <p>Ajustez les paramètres liés au mouvement pour vous adapter à votre style de jeu.</p>
+            </li>
+        </ol>
 
+        <h2>Conseils et Astuces</h2>
+        <ol>
+            <li>
+                <b>Empêcher l'application de se mettre en veille lors de la rotation du poignet :</b>
+                <p><i>Réglez le paramètre WatchOS "Retour à l'horloge" :</i></p>
+                <p>Modifiez le paramètre "Retour à l'horloge" sur "2 minutes" ou "1 heure" pour éviter que l'application ne se mette en veille lorsque votre poignet atteint une certaine orientation.</p>
+            </li>
+            <li>
+                <b>Réglez le volume bas avant de démarrer l'application</b>
+                <p>Réduisez le volume et protégez votre audition en tournant la couronne vers le bas sur le premier écran pour commencer avec un volume faible.</p>
+            </li>
+        </ol>
+
+        <h2>Problèmes Connus</h2>
+        <ol>
+            <li>
+                <b>Le son peut être coupé</b>
+                <p>Dans de très rares cas, l'application peut cesser de produire du son, mais elle tentera de reprendre automatiquement. Si le problème persiste :
+                <ol>
+                    <li>Fermez l'application en appuyant deux fois sur la couronne et en glissant pour la quitter.</li>
+                    <li>Relancez l'application.</li>
+                    <li>Le son devrait revenir à la normale.</li>
+                </ol>
+                </p>
+            </li>
+            <li>
+                <b>Optimisation de l'autonomie de la batterie</b>
+                <p>Comme l'application utilise certaines ressources lorsqu'elle est active, la batterie se décharge plus rapidement que lorsque votre montre est en veille. Nous étudions la possibilité d'ajouter un mode optimisé pour la batterie, permettant de désactiver certaines fonctionnalités. Naviguer loin de l'oscilloscope réduira également l'utilisation des ressources.</p>
+            </li>
+        </ol>
+    </main>
 </body>
 </html>

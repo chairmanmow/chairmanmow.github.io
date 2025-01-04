@@ -1,39 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonic Hands Support</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="header-toolbar">
+        <div class="logo-container">
+            <img src="hare.png" alt="Harmonic Hands Logo" class="logo">
+            <span class="logo-text">Harmonic Hands Support</span>
+        </div>
+    </header>
 
-  <h1>Harmonic Hands Support</h1>
-  <h2>Basic Operation by Page (Horizontal Tab)</h2>
-  <ol>
-    <li><b>Starting and stopping playback</b><p>Tap on the bunny to start playback and the waveform to stop.  Use the crown to adjust volume.</p></li>
-    <li><b>Adjusting Synth Parameters</b><p>Control the parameters of two separate oscillators to blend together to generate your unique sound.</p></li>
-    <li><b>Tuning Settings</b><p>Turn on or off autotune and/or adjust the frequency range to control what pitches the synthesizer will generate.</p></li>
-    <li><b>Motion Parameters</b><p>Adjust parameters related to motion in order to adapt to your playing style.</p></li>
-  </ol>
-  
-  <h2 >Tips and Tricks</h2>
-    <ol>
-    <li><b>Prevent the app from going to sleep while rotating wrist:</b>
-        <p><i>Adjust WatchOS Setting "Return To Clock":</i></p>
-        <p>Change the return to Clock setting to either "2 minutes" or "1 hour" otherwise the app will sleep when your wrist reaches a certain orientation.</p>
-    </li>
-    <li><b>Turn volume low before starting app</b>
-        <p>Prevent unwanted volume and protect hearing by rotating the crown downwards on the first view so the volume starts at a low level.</p>
-    </li>  
-  </ol>
+    <!-- Main Content -->
+    <main class="content">
+        <h1>Harmonic Hands Support</h1>
 
-  <h2 >Known issues</h2>
-  <ol>
-    <li><b>Sound may cut out</b>
-        <p>This shouldn't happen often but if it does, the app should restart the sound engine if it does. We are investigating this to see if it can be improved</p>
-    </li>
-    <li><b>Battery life optimization</b>
-        <p>Because this app uses a bit of resources when it is active, your battery will drain quicker than just leaving your watch in and idle state.  We are investigating whether it makes sense to try to add in a battery optimized mode, by allowing certain features to be toggled off.</p>
-    </li>  
-  </ol>
+        <h2>Basic Operation by Page (Horizontal Tab)</h2>
+        <ol>
+            <li>
+                <b>Starting and stopping playback</b>
+                <p>Tap on the bunny to start playback and the waveform to stop. Use the crown to adjust volume.</p>
+            </li>
+            <li>
+                <b>Adjusting Synth Parameters</b>
+                <p>Control the parameters of two separate oscillators to blend together to generate your unique sound.</p>
+            </li>
+            <li>
+                <b>Tuning Settings</b>
+                <p>Turn on or off autotune and/or adjust the frequency range to control what pitches the synthesizer will generate.</p>
+            </li>
+            <li>
+                <b>Motion Parameters</b>
+                <p>Adjust parameters related to motion in order to adapt to your playing style.</p>
+            </li>
+        </ol>
 
+        <h2>Tips and Tricks</h2>
+        <ol>
+            <li>
+                <b>Prevent the app from going to sleep while rotating wrist:</b>
+                <p><i>Adjust WatchOS Setting "Return To Clock":</i></p>
+                <p>Change the return to Clock setting to either "2 minutes" or "1 hour" otherwise the app will sleep when your wrist reaches a certain orientation.</p>
+            </li>
+            <li>
+                <b>Turn volume low before starting app</b>
+                <p>Prevent unwanted volume and protect hearing by rotating the crown downwards on the first view so the volume starts at a low level.</p>
+            </li>
+        </ol>
+
+        <h2>Known Issues</h2>
+        <ol>
+            <li>
+                <b>Sound might cut out</b>
+                <p>Very rarely, if at all, the app may stop making sound, but it should attempt to resume automatically should this happen. If the issue continues persist an app restart should resolve it: 
+                <ol>
+                    <li>Quit the app by pressing the crown twice and swiping on the app.</li>
+                    <li>Relaunch it.</li>
+                    <li>Sound should be smooth again.</li>
+                </ol>
+                </p>
+            </li>
+            <li>
+                <b>Battery life optimization</b>
+                <p>Because this app uses a bit of resources when it is active, your battery will drain quicker than just leaving your watch in an idle state. We are investigating whether it makes sense to try to add in a battery-optimized mode by allowing certain features to be toggled off. Navigating away from the oscilloscope will use a bit fewer resources.</p>
+            </li>
+        </ol>
+    </main>
 </body>
 </html>

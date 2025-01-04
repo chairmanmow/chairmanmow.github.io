@@ -1,47 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonic Hands Support</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="header-toolbar">
+        <div class="logo-container">
+            <img src="hare.png" alt="Harmonic Hands Logo" class="logo">
+            <span class="logo-text">Harmonic Hands Support</span>
+        </div>
+    </header>
 
-  <h1>Harmonic Hands Support</h1>
-  <h2>Grundlegende Bedienung pro Seite (Horizontale Registerkarte)</h2>
-  <ol>
-    <li><b>Starten und Stoppen der Wiedergabe</b>
-      <p>Tippen Sie auf den Hasen, um die Wiedergabe zu starten, und auf die Wellenform, um sie zu stoppen. Verwenden Sie die Krone, um die Lautstärke anzupassen.</p>
-    </li>
-    <li><b>Einstellungen für den Synthesizer anpassen</b>
-      <p>Steuern Sie die Parameter von zwei separaten Oszillatoren, um sie zu mischen und Ihren einzigartigen Klang zu erzeugen.</p>
-    </li>
-    <li><b>Einstellungen für das Tuning</b>
-      <p>Schalten Sie die Autotune-Funktion ein oder aus und/oder passen Sie den Frequenzbereich an, um die vom Synthesizer erzeugten Töne zu steuern.</p>
-    </li>
-    <li><b>Bewegungsparameter</b>
-      <p>Passen Sie die Bewegungsparameter an, um sie an Ihren Spielstil anzupassen.</p>
-    </li>
-  </ol>
-  
-  <h2>Tipps und Tricks</h2>
-  <ol>
-    <li><b>Verhindern, dass die App beim Drehen des Handgelenks in den Ruhemodus wechselt:</b>
-        <p><i>Ändern Sie die WatchOS-Einstellung "Zurück zur Uhr":</i></p>
-        <p>Ändern Sie die Einstellung "Zurück zur Uhr" auf "2 Minuten" oder "1 Stunde", da die App sonst in den Ruhemodus wechselt, wenn Ihr Handgelenk eine bestimmte Position erreicht.</p>
-    </li>
-    <li><b>Lautstärke vor dem Start der App niedrig einstellen</b>
-        <p>Vermeiden Sie unerwünschte Lautstärkepegel und schützen Sie Ihr Gehör, indem Sie die Krone im ersten Bildschirm nach unten drehen, um die Lautstärke niedrig zu starten.</p>
-    </li>  
-  </ol>
+    <!-- Main Content -->
+    <main class="content">
+        <h1>Harmonic Hands Support</h1>
 
-  <h2>Bekannte Probleme</h2>
-  <ol>
-    <li><b>Ton könnte ausfallen</b>
-        <p>Dies sollte nicht häufig passieren, aber falls es doch passiert, wird die App den Sound-Engine automatisch neu starten. Wir untersuchen dieses Problem, um es zu verbessern.</p>
-    </li>
-    <li><b>Optimierung der Batterielaufzeit</b>
-        <p>Da diese App bei Aktivität einige Ressourcen nutzt, entlädt sich die Batterie schneller als im Leerlaufzustand. Wir prüfen, ob es sinnvoll ist, einen optimierten Batteriemodus hinzuzufügen, indem bestimmte Funktionen deaktiviert werden können.</p>
-    </li>  
-  </ol>
+        <h2>Grundlegende Bedienung nach Seite (Horizontale Registerkarte)</h2>
+        <ol>
+            <li>
+                <b>Wiedergabe starten und stoppen</b>
+                <p>Tippen Sie auf den Hasen, um die Wiedergabe zu starten, und auf die Wellenform, um sie zu stoppen. Verwenden Sie die Krone, um die Lautstärke anzupassen.</p>
+            </li>
+            <li>
+                <b>Anpassen der Synthesizer-Parameter</b>
+                <p>Steuern Sie die Parameter von zwei separaten Oszillatoren, um diese zu mischen und einen einzigartigen Klang zu erzeugen.</p>
+            </li>
+            <li>
+                <b>Stimmeinstellungen</b>
+                <p>Schalten Sie Autotune ein oder aus und/oder passen Sie den Frequenzbereich an, um die vom Synthesizer erzeugten Töne zu steuern.</p>
+            </li>
+            <li>
+                <b>Bewegungsparameter</b>
+                <p>Passen Sie die mit der Bewegung verbundenen Parameter an, um Ihren Spielstil zu unterstützen.</p>
+            </li>
+        </ol>
 
+        <h2>Tipps und Tricks</h2>
+        <ol>
+            <li>
+                <b>Verhindern, dass die App beim Drehen des Handgelenks in den Schlafmodus wechselt:</b>
+                <p><i>Passen Sie die WatchOS-Einstellung „Zurück zur Uhr“ an:</i></p>
+                <p>Ändern Sie die Einstellung „Zurück zur Uhr“ auf „2 Minuten“ oder „1 Stunde“, damit die App nicht in den Schlafmodus wechselt, wenn Ihr Handgelenk eine bestimmte Ausrichtung erreicht.</p>
+            </li>
+            <li>
+                <b>Lautstärke vor dem Starten der App niedrig einstellen</b>
+                <p>Vermeiden Sie unerwünschte Lautstärke und schützen Sie Ihr Gehör, indem Sie die Krone im ersten Bildschirm nach unten drehen, sodass die Lautstärke auf einem niedrigen Pegel beginnt.</p>
+            </li>
+        </ol>
+
+        <h2>Bekannte Probleme</h2>
+        <ol>
+            <li>
+                <b>Der Ton könnte ausfallen</b>
+                <p>In sehr seltenen Fällen kann die App aufhören, Ton auszugeben, sollte jedoch versuchen, automatisch wiederaufzunehmen. Falls das Problem weiterhin besteht:
+                <ol>
+                    <li>Beenden Sie die App, indem Sie die Krone zweimal drücken und die App nach oben wischen.</li>
+                    <li>Starten Sie die App neu.</li>
+                    <li>Der Ton sollte wieder reibungslos funktionieren.</li>
+                </ol>
+                </p>
+            </li>
+            <li>
+                <b>Optimierung der Batterielaufzeit</b>
+                <p>Da die App einige Ressourcen verbraucht, während sie aktiv ist, entlädt sich die Batterie schneller als im Leerlaufzustand. Wir prüfen, ob es sinnvoll ist, einen batteriefreundlichen Modus hinzuzufügen, indem bestimmte Funktionen deaktiviert werden können. Das Verlassen des Oszilloskops spart ebenfalls Ressourcen.</p>
+            </li>
+        </ol>
+    </main>
 </body>
 </html>

@@ -1,47 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supporto Harmonic Hands</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="header-toolbar">
+        <div class="logo-container">
+            <img src="hare.png" alt="Logo Harmonic Hands" class="logo">
+            <span class="logo-text">Supporto Harmonic Hands</span>
+        </div>
+    </header>
 
-  <h1>Supporto per Harmonic Hands</h1>
-  <h2>Operazioni di base per pagina (Scheda orizzontale)</h2>
-  <ol>
-    <li><b>Avviare e interrompere la riproduzione</b>
-      <p>Tocca il coniglio per avviare la riproduzione e l'onda per interromperla. Usa la corona per regolare il volume.</p>
-    </li>
-    <li><b>Regolare i parametri del sintetizzatore</b>
-      <p>Controlla i parametri di due oscillatori separati per combinarli e creare il tuo suono unico.</p>
-    </li>
-    <li><b>Impostazioni di accordatura</b>
-      <p>Attiva o disattiva l'autotune e/o regola l'intervallo di frequenze per controllare le note generate dal sintetizzatore.</p>
-    </li>
-    <li><b>Parametri di movimento</b>
-      <p>Regola i parametri relativi al movimento per adattarli al tuo stile di gioco.</p>
-    </li>
-  </ol>
-  
-  <h2>Consigli e suggerimenti</h2>
-  <ol>
-    <li><b>Impedire che l'app entri in modalità riposo mentre ruoti il polso:</b>
-        <p><i>Modifica l'impostazione di WatchOS "Torna all'orologio":</i></p>
-        <p>Cambia l'impostazione "Torna all'orologio" in "2 minuti" o "1 ora", altrimenti l'app andrà in modalità riposo quando il tuo polso raggiunge una certa posizione.</p>
-    </li>
-    <li><b>Abbassa il volume prima di avviare l'app</b>
-        <p>Evita livelli di volume indesiderati e proteggi l'udito ruotando la corona verso il basso nella prima schermata per iniziare con un volume basso.</p>
-    </li>  
-  </ol>
+    <!-- Main Content -->
+    <main class="content">
+        <h1>Supporto Harmonic Hands</h1>
 
-  <h2>Problemi noti</h2>
-  <ol>
-    <li><b>Il suono potrebbe interrompersi</b>
-        <p>Non dovrebbe accadere spesso, ma se succede, l'app riavvierà automaticamente il motore del suono. Stiamo indagando su questo problema per migliorarlo.</p>
-    </li>
-    <li><b>Ottimizzazione della durata della batteria</b>
-        <p>Poiché questa app utilizza alcune risorse quando è attiva, la batteria si scaricherà più velocemente rispetto a quando l'orologio è in modalità inattiva. Stiamo valutando se ha senso aggiungere una modalità di ottimizzazione della batteria, consentendo di disattivare alcune funzionalità.</p>
-    </li>  
-  </ol>
+        <h2>Funzionamento di Base per Pagina (Scheda Orizzontale)</h2>
+        <ol>
+            <li>
+                <b>Avviare e fermare la riproduzione</b>
+                <p>Tocca il coniglio per avviare la riproduzione e l'onda per fermarla. Usa la corona per regolare il volume.</p>
+            </li>
+            <li>
+                <b>Regolazione dei parametri del sintetizzatore</b>
+                <p>Controlla i parametri di due oscillatori separati per combinarli e generare il tuo suono unico.</p>
+            </li>
+            <li>
+                <b>Impostazioni di accordatura</b>
+                <p>Attiva o disattiva l'accordatura automatica e/o regola l'intervallo di frequenza per controllare quali tonalità genererà il sintetizzatore.</p>
+            </li>
+            <li>
+                <b>Parametri di movimento</b>
+                <p>Regola i parametri relativi al movimento per adattarti al tuo stile di gioco.</p>
+            </li>
+        </ol>
 
+        <h2>Consigli e Suggerimenti</h2>
+        <ol>
+            <li>
+                <b>Impedire all'app di andare in standby mentre si ruota il polso:</b>
+                <p><i>Modifica l'impostazione di WatchOS "Torna all'orologio":</i></p>
+                <p>Cambia l'impostazione "Torna all'orologio" su "2 minuti" o "1 ora", altrimenti l'app andrà in standby quando il tuo polso raggiunge una determinata angolazione.</p>
+            </li>
+            <li>
+                <b>Abbassa il volume prima di avviare l'app</b>
+                <p>Evita volumi indesiderati e proteggi l'udito ruotando la corona verso il basso nella prima schermata per impostare il volume su un livello basso.</p>
+            </li>
+        </ol>
+
+        <h2>Problemi Conosciuti</h2>
+        <ol>
+            <li>
+                <b>Il suono potrebbe interrompersi</b>
+                <p>In casi molto rari, l'app potrebbe smettere di emettere suoni, ma dovrebbe cercare di riprendere automaticamente. Se il problema persiste:
+                <ol>
+                    <li>Chiudi l'app premendo due volte la corona e scorrendo per chiudere.</li>
+                    <li>Riavvia l'app.</li>
+                    <li>Il suono dovrebbe tornare a funzionare senza problemi.</li>
+                </ol>
+                </p>
+            </li>
+            <li>
+                <b>Ottimizzazione della durata della batteria</b>
+                <p>Poiché l'app utilizza alcune risorse mentre è attiva, la batteria si scarica più velocemente rispetto allo stato inattivo dell'orologio. Stiamo valutando se ha senso aggiungere una modalità ottimizzata per la batteria, consentendo la disattivazione di alcune funzionalità. Allontanandoti dall'oscilloscopio risparmierai anche risorse.</p>
+            </li>
+        </ol>
+    </main>
 </body>
 </html>
