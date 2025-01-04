@@ -4,15 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form</title>
+  <script>
+    function sendEmail(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Get form values
+      const subject = document.getElementById("subject").value;
+      const email = document.getElementById("email").value;
+      const body = document.getElementById("body").value;
+
+      // Construct the mailto link
+      const mailtoLink = `mailto:logo.lutes2l@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        `From: ${email}\n\n${body}`
+      )}`;
+
+      // Open the mailto link
+      window.location.href = mailtoLink;
+    }
+  </script>
 </head>
 <body>
-  <form action="mailto:logo.lutes2l@icloud.com" method="get" enctype="text/plain">
-    Subject:<br>
-    <input type="text" name="subject" placeholder="Your Name"><br>
-    Email:<br>
-    <input type="email" name="email" placeholder="Your Email"><br>
-    Message:<br>
-    <textarea name="body" rows="5" cols="30" placeholder="Your Message"></textarea><br>
+  <h1>Contact Form</h1>
+  <form onsubmit="sendEmail(event)">
+    <label for="subject">Subject:</label><br>
+    <input type="text" id="subject" name="subject" placeholder="Your Name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+
+    <label for="body">Message:</label><br>
+    <textarea id="body" name="body" rows="5" cols="30" placeholder="Your Message" required></textarea><br><br>
+
     <input type="submit" value="Send">
   </form>
 </body>
