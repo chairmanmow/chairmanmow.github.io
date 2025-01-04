@@ -1,47 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wsparcie Harmonic Hands</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="header-toolbar">
+        <div class="logo-container">
+            <img src="hare.png" alt="Logo Harmonic Hands" class="logo">
+            <span class="logo-text">Wsparcie Harmonic Hands</span>
+        </div>
+    </header>
 
-  <h1>Wsparcie dla Harmonic Hands</h1>
-  <h2>Podstawowa obsługa według strony (Zakładka pozioma)</h2>
-  <ol>
-    <li><b>Rozpoczynanie i zatrzymywanie odtwarzania</b>
-      <p>Dotknij królika, aby rozpocząć odtwarzanie, i falę, aby je zatrzymać. Użyj pokrętła, aby dostosować głośność.</p>
-    </li>
-    <li><b>Dostosowywanie parametrów syntezatora</b>
-      <p>Steruj parametrami dwóch niezależnych oscylatorów, aby je połączyć i stworzyć unikalny dźwięk.</p>
-    </li>
-    <li><b>Ustawienia strojenia</b>
-      <p>Włącz lub wyłącz autotune i/lub dostosuj zakres częstotliwości, aby kontrolować dźwięki generowane przez syntezator.</p>
-    </li>
-    <li><b>Parametry ruchu</b>
-      <p>Dostosuj parametry związane z ruchem, aby dopasować je do swojego stylu gry.</p>
-    </li>
-  </ol>
-  
-  <h2>Porady i wskazówki</h2>
-  <ol>
-    <li><b>Zapobieganie przechodzeniu aplikacji w tryb uśpienia podczas obracania nadgarstka:</b>
-        <p><i>Dostosuj ustawienie WatchOS "Powrót do zegara":</i></p>
-        <p>Zmień ustawienie "Powrót do zegara" na "2 minuty" lub "1 godzinę", w przeciwnym razie aplikacja przejdzie w tryb uśpienia, gdy nadgarstek osiągnie określoną pozycję.</p>
-    </li>
-    <li><b>Obniż głośność przed uruchomieniem aplikacji</b>
-        <p>Unikaj niepożądanej głośności i chroń słuch, obracając pokrętło w dół na pierwszym widoku, aby rozpocząć od niskiego poziomu głośności.</p>
-    </li>  
-  </ol>
+    <!-- Main Content -->
+    <main class="content">
+        <h1>Wsparcie Harmonic Hands</h1>
 
-  <h2>Znane problemy</h2>
-  <ol>
-    <li><b>Dźwięk może się urwać</b>
-        <p>To nie powinno zdarzać się często, ale jeśli tak się stanie, aplikacja automatycznie zrestartuje silnik dźwięku. Badamy ten problem, aby go poprawić.</p>
-    </li>
-    <li><b>Optymalizacja żywotności baterii</b>
-        <p>Ponieważ aplikacja korzysta z pewnych zasobów podczas działania, bateria rozładuje się szybciej niż w stanie bezczynności. Rozważamy dodanie trybu zoptymalizowanego dla baterii, umożliwiającego wyłączenie niektórych funkcji.</p>
-    </li>  
-  </ol>
+        <h2>Podstawowa Obsługa Według Strony (Zakładki Poziome)</h2>
+        <ol>
+            <li>
+                <b>Rozpoczęcie i zatrzymanie odtwarzania</b>
+                <p>Stuknij w zająca, aby rozpocząć odtwarzanie, i w falę, aby zatrzymać. Użyj korony, aby dostosować głośność.</p>
+            </li>
+            <li>
+                <b>Regulacja parametrów syntezatora</b>
+                <p>Steruj parametrami dwóch oddzielnych oscylatorów, aby je połączyć i wygenerować unikalny dźwięk.</p>
+            </li>
+            <li>
+                <b>Ustawienia strojenia</b>
+                <p>Włącz lub wyłącz automatyczne strojenie i/lub dostosuj zakres częstotliwości, aby kontrolować generowane przez syntezator dźwięki.</p>
+            </li>
+            <li>
+                <b>Parametry ruchu</b>
+                <p>Dostosuj parametry związane z ruchem, aby dopasować je do swojego stylu gry.</p>
+            </li>
+        </ol>
 
+        <h2>Wskazówki i Porady</h2>
+        <ol>
+            <li>
+                <b>Zapobieganie przejściu aplikacji w stan uśpienia podczas obracania nadgarstka:</b>
+                <p><i>Dostosuj ustawienie WatchOS „Powrót do zegara”:</i></p>
+                <p>Zmień ustawienie „Powrót do zegara” na „2 minuty” lub „1 godzinę”, aby aplikacja nie przechodziła w stan uśpienia, gdy nadgarstek osiągnie określony kąt.</p>
+            </li>
+            <li>
+                <b>Ustaw niską głośność przed uruchomieniem aplikacji</b>
+                <p>Zapobiegaj niechcianej głośności i chroń słuch, obracając koronę w dół na pierwszym ekranie, aby rozpocząć z niskim poziomem głośności.</p>
+            </li>
+        </ol>
+
+        <h2>Znane Problemy</h2>
+        <ol>
+            <li>
+                <b>Dźwięk może się przerwać</b>
+                <p>W bardzo rzadkich przypadkach aplikacja może przestać wydawać dźwięk, ale powinna spróbować automatycznie wznowić. Jeśli problem będzie się powtarzał:
+                <ol>
+                    <li>Zamknij aplikację, naciskając dwukrotnie koronę i przesuwając, aby zamknąć.</li>
+                    <li>Uruchom ponownie aplikację.</li>
+                    <li>Dźwięk powinien wrócić do normalnego działania.</li>
+                </ol>
+                </p>
+            </li>
+            <li>
+                <b>Optymalizacja żywotności baterii</b>
+                <p>Ponieważ aplikacja wykorzystuje pewne zasoby, gdy jest aktywna, bateria będzie się szybciej rozładowywać niż w stanie bezczynności zegarka. Analizujemy możliwość dodania trybu oszczędzania baterii, umożliwiając wyłączenie niektórych funkcji. Przejście z widoku oscyloskopu również zmniejszy zużycie zasobów.</p>
+            </li>
+        </ol>
+    </main>
 </body>
 </html>

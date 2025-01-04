@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form</title>
+  <link rel="stylesheet" href="hh/styles.css">
   <script>
     function sendEmail(event) {
       event.preventDefault(); // Prevent the default form submission
@@ -24,18 +25,29 @@
   </script>
 </head>
 <body>
-  <h1>Contact Form</h1>
-  <form onsubmit="sendEmail(event)">
-    <label for="subject">Subject:</label><br>
-    <input type="text" id="subject" name="subject" placeholder="Your Name" required><br><br>
+  <!-- Header Section -->
+  <header class="header-toolbar">
+    <div class="logo-container">
+      <img src="hh/logo.png" alt="Logo" class="logo">
+      <span class="logo-text">Contact Us</span>
+    </div>
+  </header>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+  <!-- Main Content -->
+  <main class="content">
+    <h1>Contact Form</h1>
+    <form onsubmit="sendEmail(event)" class="contact-form">
+      <label for="subject">Subject:</label><br>
+      <input type="text" id="subject" name="subject" placeholder="Your Name" required><br><br>
 
-    <label for="body">Message:</label><br>
-    <textarea id="body" name="body" rows="5" cols="30" placeholder="Your Message" required></textarea><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
 
-    <input type="submit" value="Send">
-  </form>
+      <label for="body">Message:</label><br>
+      <textarea id="body" name="body" rows="5" cols="30" placeholder="Your Message" required></textarea><br><br>
+
+      <input type="submit" value="Send">
+    </form>
+  </main>
 </body>
 </html>
